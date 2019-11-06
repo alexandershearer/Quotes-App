@@ -33,9 +33,10 @@ class App extends Component {
     });
   }
 
+
   render() {
     return (
-      <div>
+      <div className="quoteHolder fadeIn">
         <QuoteBox
           quote={this.state.quote}
           author={this.state.author}

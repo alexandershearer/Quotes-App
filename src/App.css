@@ -20,3 +20,78 @@
 .App-link {
   color: #09d3ac;
 }
+
+body, html {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 3px 20px black;
+  background: linear-gradient(270deg, #fcff3e, #61daff, #6aff83, #b485ff);
+  background-size: 800% 800%;
+  
+  animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+button{
+  width: 125px;
+  height: 50px;
+  border-radius: 20%;
+  color: rgb(0, 0, 0);
+  background-color: rgba(197, 197, 197, 0.274);
+  border: 3px solid black;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:focus{
+  outline: none;
+
+}
+button:hover{
+  background-color: rgba(255, 255, 255, 0.74);
+  transition: 0.5s;
+}
+
+
+.quoteHolder{
+  animation: slideinright 1.5s;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.quoteText{
+  animation: slideinright 1.5s;
+}
+
+.fadeIn {
+  animation: slideinright 1.5s;
+}
+
+
+@keyframes slideinright {
+  0%   { 
+    transform: translateX(200%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+}
+@keyframes slideinleft {
+  0%   { 
+    transform: translateX(-200%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+}
